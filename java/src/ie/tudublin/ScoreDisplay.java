@@ -76,14 +76,19 @@ public class ScoreDisplay extends PApplet
 
 		fill(0,0,0);
 		ellipse(240, 400, 50, 50);
+		line(265, 400, 265, 200);
+		
 	
 		
 		fill(0,0,0);
 		ellipse(340, 360, 50, 50);
+		line(365, 350, 365, 150);
+		line(365, 150, 405, 200);
 
 
 		fill(0,0,0);
 		ellipse(440, 320, 50, 50);
+		line(465, 100, 465, 325);
 	}
 	
 
