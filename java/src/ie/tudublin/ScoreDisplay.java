@@ -15,20 +15,21 @@ public class ScoreDisplay extends PApplet
 
 	void loadScore()
 	{
-	for(int i =0; i<8;i++)
-	{
+		for(int i =0; i<8;i++)
+		{
 		
-	}
+		}
+
 	}
 
 	// method to draw the 5 horizontal lines
 	void drawGrid()
     {
         float border = 0.1f * width;
-        for(int i = 0 ; i <=5 ; i ++)
+        for(int i = 1 ; i <=5 ; i ++)
         {
-            float x = map(i, 0, 5, border, width - border);
-            float y = map(i, 0, 5, border, height - border);
+            float x = map(i, 1, 5, border, width - border);
+            float y = map(i, 1, 5, border, height - border);
             stroke(0, 0, 0);
             line(border, y, width - border, y);
 
@@ -59,14 +60,32 @@ public class ScoreDisplay extends PApplet
 	{
 		background(255);
 		drawGrid();
+		drawNotes();
 		
 	}
-
+// this methods draws the notes
 	void drawNotes()
 	{
+		fill(0,0,0);
+		ellipse(125, 425, 50, 50);
+		fill(0,0,0);
+		strokeWeight(3);
+		line(150, 430, 150, 250);
+		strokeWeight(3);
+		line(150, 250, 190, 300);
 
+		fill(0,0,0);
+		ellipse(240, 400, 50, 50);
 	
+		
+		fill(0,0,0);
+		ellipse(340, 360, 50, 50);
+
+
+		fill(0,0,0);
+		ellipse(440, 320, 50, 50);
 	}
+	
 
 
 }
